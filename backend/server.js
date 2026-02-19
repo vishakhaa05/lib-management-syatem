@@ -17,9 +17,9 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
   if (err) {
-    console.log("❌ DB connection failed:", err);
+    console.log(" DB connection failed:", err);
   } else {
-    console.log("✅ Connected to MySQL");
+    console.log(" Connected to MySQL");
   }
 });
 
@@ -72,5 +72,5 @@ app.put("/books/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
